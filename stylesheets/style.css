@@ -34,13 +34,13 @@ a.previous:hover {background-image: url(images/icons/button-05.png)}
 #featured.orbit img { display: block; }
 
 .title h1 a {
-	font-family: 'Lato', sans-serif !important;
-	/*font-family: 'Shadows Into Light', cursive !important;
+	font-family: 'Shadows Into Light', cursive !important;
+	/*font-family: 'Lato', sans-serif !important;
 	font-family: 'Lato', sans-serif;
 	font-family: 'Codystar', cursive;
 	font-family: 'Josefin Sans', sans-serif;
 	font-family: 'Voltaire', sans-serif;*/
-	font-size: 38px;
+	font-size: 44px;
 	color: #ffa500;
 	margin-bottom: 0px;
 }
