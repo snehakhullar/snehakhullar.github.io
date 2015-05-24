@@ -15,13 +15,15 @@
 		<title>Design Portfolio by Sneha Khullar</title>
 		
 		<!-- Included CSS Files -->
-		<link rel="stylesheet" href="stylesheets/style.css">
+		
 		<link rel="stylesheet" href="stylesheets/polaroids.css">
 		<link rel="stylesheet" href="stylesheets/foundation.css">
 		<link rel="stylesheet" href="stylesheets/foundation.top-bar.css">
 		<link href='//fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Lato|Codystar|Josefin+Sans:400,600,700|Voltaire' rel='stylesheet' type='text/css'>
 		<link href='//fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 		<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="stylesheets/style.css">
 		
 		<!-- Included favicon -->
 		<link rel="shortcut icon" href="images/favicon.ico"> 
@@ -31,21 +33,13 @@
 		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png"> 
 		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"> 
 
-		<!-- Analytics code --> 
-		<script>eview"]]; ( function(e, a) { 
-		var c = e.createElement(a), b = e.getElementsByTagName(a)[
-		var _gaq = [["_setAccount", "UA-11979909-7"], ["_trackPag0];
-		c.src = ("https:" == location.protocol ? "//ssl" : "//www") + ".google-analytics.com/ga.js";
-		c.async = true; 
-		b.parentNode.insertBefore(c, b) 
-		}(document, "script")); 
-		</script> 
-
 		<!--[if lt IE 9]>
 		<link rel="stylesheet" href="stylesheets/ie.css">
 		<![endif]-->
 		
 		<script src="javascripts/modernizr.foundation.js"></script>
+		<script src="javascripts/jquery.min.js"></script>
+		<script src="javascripts/foundation.js"></script>
 
 		<!-- IE Fix for HTML5 Tags -->
 		
@@ -55,81 +49,185 @@
 
 	</head>
 	
-	<body class="mainpage" style="background-image:url('https://dl.dropbox.com/u/17291013/site/images/background.jpg'); background-repeat:no-repeat;
-background-size:100%;" >
+	<body class="mainpage backimage">
 	
 		<!-- header -->
 		<div class="container">
 			<div class="row">
 				<div class="title">
 					<div class="eight columns">
-						<h1>Design Portfolio</h1>
+						<h1><a href="index.html">Design Portfolio</a></h1>
 						<p>by Sneha Khullar</p>
 					</div>
 					<div class="two columns">
-						<h3><a href="resume.pdf">Resume</a></h2>
+						<h3><a href="about.html">About</a></h2> 
 					</div>
 					<div class="two columns">
-						<h3><a href="mailto:snehakhullar@gnail.com">Get in touch</a></h2> 
+						<h3><a href="resume.pdf">Resume</a></h2>
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<div class="row">
+		<div id="filter" class="row filterbutton">
+		<center><a id="all" name="type" value="all" class="medium secondary round button" href="#">All</a>
+		<a id="website" name="type" value="website" class="medium secondary round button" href="#">Websites</a>
+		<a id="app" name="type" value="app" class="medium secondary round button" href="#">Applications</a>
+		<a id="instal" name="type" value="instal" class="medium secondary round button" href="#">Installations</a>
+		<a id="oth" name="type" value="oth" class="medium secondary round button" href="#">Others</a></center>
 		<p> &nbsp </p>
 		</div>
 		  
 		<div class="row">
-			<ul class="polaroids thumbnails">
-				<li>
-					<a href="esriLabs.html" title="esri labs">
-						<img src="images/esri labs.png" alt="esri labs" />
+			<ul id="applications" class="polaroids thumbnails">				
+				<li class="app">
+					<a href="fragments.html" title="Fragments">
+						<img src="images/fragments.png" alt="Fragments" />
 					</a>
 				</li>
-				<li>
-					<a href="responsiveMapApp.html" title="Responsive mapping application">
-						<img src="images/ResponsiveMapApp.jpg" alt="Responsive mapping application" />
+				<li class="app">
+					<a href="responsiveMapApp.html" title="Responsive Mapping App">
+						<img src="images/ResponsiveMapApp.jpg" alt="Responsive Mapping App" />
 					</a>
 				</li>
-				<li>
-					<a href="fotofare.html" title="fotofare">
-						<img src="images/fotofare.png" alt="fotofare" />
+				<li class="website">
+					<a href="fotofare.html" title="Fotofare">
+						<img src="images/fotofare.png" alt="Fotofare" />
 					</a>
 				</li>
-				<li>
-					<a href="note-ing.html" title="note-ing">
-						<img src="images/press-packs.png" alt="press-packs" />
+				<li class="app">
+					<a href="note-ing.html" title="Note-ing">
+						<img src="images/noting.png" alt="Note-ing" />
 					</a>
 				</li>
-				<li>
-					<a href="harvardCourseNetworks.html" title="harvard course networks">
-						<img src="images/harvard-course-networks.png" alt="harvard course networks" />
+				<li class="website">
+					<a href="esriLabs.html" title="Esri Labs">
+						<img id="d2" src="images/esri labs.png" alt="Esri Labs" />
 					</a>
 				</li>
-				<li>
-					<a href="cupInARoom.html" title="cup in a room">
-						<img src="images/cupInARoom.png" alt="cup in a room" />
+				<li class="app">
+					<a href="harvardCourseNetworks.html" title="Harvard Networks">
+						<img src="images/harvard-course-networks.png" alt="Harvard Networks" />
+					</a>
+				</li>
+				<li class="app">
+					<a href="cupInARoom.html" title="Cup in a Room">
+						<img src="images/cupInARoom.png" alt="Cup in a Room" />
 					</a>
 				</li>				
-				<li>
-					<a href="pacingCities.html" title="paced cities">
-						<img src="images/paced cities.png" alt="paced cities" />
+				<li class="website">
+					<a href="impactProjects.html" title="Impact Projects">
+						<img src="images/impactProjects.png" alt="Impact Projects" />
 					</a>
-				</li>				
-				<li>
-					<a href="neuro-prosthetics.html" title="neuro-prosthetics">
-						<img src="images/neuro-prosthetics.png" alt="neuro-prosthetics" />
+				</li>
+				<li class="oth">
+					<a href="type.html" title="Type">
+						<img src="images/type.png" alt="Type" />
+					</a>
+				</li>
+				<li class="app">
+					<a href="ciao.html" title="Ciao">
+						<img src="images/ciao.png" alt="Ciao" />
+					</a>
+				</li>
+				<li class="oth">
+					<a href="businessInnovationModel.html" title="Innovation Model">
+						<img src="images/businessinnovationmodel.png" alt="Innovation Model" />
+					</a>
+				</li>			
+				<li class="instal">
+					<a href="neuroprosthetics.html" title="Neuro-prosthetics">
+						<img src="images/neuro-prosthetics.png" alt="Neuro-prosthetics" />
+					</a>
+				</li>	
+				<li class="instal">
+					<a href="pacingCities.html" title="Pacing Cities">
+						<img src="images/paced cities.png" alt="Pacing Cities" />
+					</a>
+				</li>	
+				<li class="oth">
+					<a href="people-place.html" title="People-Place">
+						<img src="images/people-place.png" alt="People-Place" />
+					</a>
+				</li>
+				<li class="oth">
+					<a href="schoolatkargyak.html" title="School at Kargyak">
+						<img src="images/schoolatkargyak.png" alt="School at Kargyak" />
+					</a>
+				</li>
+				<li class="instal">
+					<a href="body-space.html" title="Body-Space">
+						<img src="images/body-space.png" alt="Body-Space" />
 					</a>
 				</li>			
 			</ul>
 		</div>
-		
+
 		<div class="row">
-			<div class="bottom">
-				<hr/>
-				<center><p>Selected Projects, August 2011 - October 2012</p></center>
-			</div>
+			<p> &nbsp </p>
 		</div>
+		<div class="row">
+			<p> &nbsp </p>
+		</div>
+
+		<div class="row bottom">
+			<center><div class="">
+				<p style="margin-bottom:0px;">&nbsp;</p>
+				<hr/>
+				<p>Selected Projects, July 2010 - February 2013 | Website designed &amp; implemented by Sneha Khullar using Zurb Foundation</p>
+			</div></center>
+		</div>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('#all').click(function() {
+		        	$('#applications li').show();
+		        	$('#filter a').css('background-color','#e9e9e9');
+		        	$('#filter a').css('color','#8e8e8e');
+		        	$('#all').css('background-color','#ffa500');
+		        	$('#all').css('color','#ffffff');
+      			});
+      			$('#website').click(function() {
+		        	$('#applications .website').show();
+		        	$('#applications .app').hide();
+		        	$('#applications .instal').hide();
+		        	$('#applications .oth').hide();
+		        	$('#filter a').css('background-color','#e9e9e9');
+		        	$('#filter a').css('color','#8e8e8e');
+		        	$('#website').css('background-color','#ffa500');
+		        	$('#website').css('color','#ffffff');
+      			});
+      			$('#app').click(function() {
+		        	$('#applications .app').show();
+		        	$('#applications .website').hide();
+		        	$('#applications .instal').hide();
+		        	$('#applications .oth').hide();
+		        	$('#filter a').css('background-color','#e9e9e9');
+		        	$('#filter a').css('color','#8e8e8e');
+		        	$('#app').css('background-color','#ffa500');
+		        	$('#app').css('color','#ffffff');
+      			});
+      			$('#instal').click(function() {
+		        	$('#applications .instal').show();
+		        	$('#applications .website').hide();
+		        	$('#applications .app').hide();
+		        	$('#applications .oth').hide();
+		        	$('#filter a').css('background-color','#e9e9e9');
+		        	$('#filter a').css('color','#8e8e8e');
+		        	$('#instal').css('background-color','#ffa500');
+		        	$('#instal').css('color','#ffffff');
+      			});
+      			$('#oth').click(function() {
+		        	$('#applications .oth').show();
+		        	$('#applications .website').hide();
+		        	$('#applications .app').hide();
+		        	$('#applications .instal').hide();
+		        	$('#filter a').css('background-color','#e9e9e9');
+		        	$('#filter a').css('color','#8e8e8e');
+		        	$('#oth').css('background-color','#ffa500');
+		        	$('#oth').css('color','#ffffff');
+      			});
+			});
+    	</script>
 		
 	</body>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+
+	<head>
+	
+		<meta charset="utf-8" />
+
+		<!-- Set the viewport width to device width for mobile -->
+		<meta name="viewport" content="width=device-width" />
+		<title>Type:Design Portfolio by Sneha Khullar </title>
+		
+		<!-- Included CSS Files -->
+		<link rel="stylesheet" href="stylesheets/foundation.css">
+		<link rel="stylesheet" href="stylesheets/polaroids.css">
+		<link rel="stylesheet" href="stylesheets/style.css">
+		<link href='//fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+		
+		<!-- Included favicon -->
+		<link rel="shortcut icon" href="images/favicon.ico"> 
+
+		<!-- Included apple-touch-icon -->
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png"> 
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png"> 
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png"> 
+
+		<!--[if lt IE 9]>
+		<link rel="stylesheet" href="stylesheets/ie.css">
+		<![endif]-->
+		
+		
+
+		<!-- IE Fix for HTML5 Tags -->
+		
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+	</head>
+	
+	<body class="mainpage backimage">
+	
+	<!-- header -->
+		<div class="container">
+			<div class="row header">
+				<div class="title">
+					<h1><a href="index.html">Design Portfolio</a></h1>
+					<p>by Sneha Khullar</p>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="title">
+					<h2><a href="index.html">home</a>
+					<a class="previous" title="previous" href="impactProjects.html"></a>
+					<a class="next" title="next" href="ciao.html"></a></h2>
+				</div>
+			</div>
+			
+			<div class="row">
+			
+					<div class="eight columns">
+						<div id="featured">
+							<img class="image-box" src="images/type/type1.jpg" style="width: 100%"/>
+							<img class="image-box" src="images/type/type2.jpg" style="width: 100%"/>
+							<img class="image-box" src="images/type/type3.jpg" style="width: 100%"/>
+						</div>
+					</div>
+				
+				<div class="description">
+					<div class="four column">
+						<h1>Type</h1>
+						<p><span style="font-weight:bold; font-size:13px;">Type Design - Typography</span></p>
+						<p>The design of this type was insipred by eighteenth century fonts to create a style which is contemporary and unique. The reverse italic quality of the type reflected by the out turns gives it an elegant identity. The word like 'minimum' is a perfect example of this impression.</p>
+					</div>
+				</div>
+				
+			</div>
+
+			<div class="row bottom">
+				<center><div class="">
+					<p style="margin-bottom:0px;">Individually executed project in Crafting Type Workshop</p>
+					<hr/>
+					<p>Selected Projects, July 2010 - February 2013 | Website designed &amp; implemented by Sneha Khullar using Zurb Foundation</p>
+				</div></center>
+			</div>
+		</div>
+	<!-- Included JS Files --> 
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/modernizr.foundation.js"></script>
+	<script src="javascripts/foundation.js"></script>
+
+	<script type="text/javascript">
+		$(window).load(function() {
+		$('#featured').orbit({
+			animation: 'fade',
+			animationSpeed: 800,
+			directionalNav: true,
+			timer: true,
+			});
+		});
+	</script>
+	</body>
+</html>
+		
+		

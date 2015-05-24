@@ -1,14 +1,52 @@
-#featured { background: url(spinner.gif) center center #f4f4f4; height: 397px; }
+.back {
+	min-height:780px;
+} 
+.backimage {
+	background-image: url(../images/background.jpg); 
+	background-repeat:no-repeat;
+	background-size:100% 100%;
+	min-height:780px; 
+}
+
+.next {background-image: url(images/icons/button-04.png); background-repeat:no-repeat; background-size: 30px 30px; background-position: left; padding-left: 30px;}
+.previous {background-image: url(images/icons/button-03.png); background-repeat:no-repeat; background-size: 30px 30px; background-position: left; padding-left: 30px;}
+
+a.next:hover {background-image: url(images/icons/button-06.png)}
+a.previous:hover {background-image: url(images/icons/button-05.png)}
+
+.filterbutton .button {
+	border: none;
+	font-family: 'Oswald', sans-serif;
+	color: #8e8e8e;
+	font-size: 14px;
+}
+
+.filterbutton .button:hover {
+	background-color: #ffa500; 
+	color: white;
+}
+
+/*.grayscale {-webkit-filter: grayscale(100%);}*/
+#featured { height: 397px; }
 #featured img { display: none; }
 
 #featured.orbit { background: none; }
 #featured.orbit img { display: block; }
 
-.title h1 {
-	font-family: 'Shadows Into Light', cursive !important;
-	font-size: 44px;
-	color: orange;
+.title h1 a {
+	font-family: 'Lato', sans-serif !important;
+	/*font-family: 'Shadows Into Light', cursive !important;
+	font-family: 'Lato', sans-serif;
+	font-family: 'Codystar', cursive;
+	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Voltaire', sans-serif;*/
+	font-size: 38px;
+	color: #ffa500;
 	margin-bottom: 0px;
+}
+
+.title h1 a:hover {
+	color: #ffa500;
 }
 
 .title h3 {
@@ -27,7 +65,7 @@
 }
 
 .title h3 a:hover {
-	color: orange;
+	color: #ffa500;
 }
 
 .title h2 {
@@ -45,7 +83,7 @@
 }	
 
 .title a:hover{
-	color: #8e8e8e;	
+	color: #ffa500;	
 }
 
 .title p{
@@ -54,7 +92,6 @@
 	color: #d6d6d6;
 	font-weight: normal;
 	padding-left: 5px;
-	padding-top: 10px;
 }
 
 .video .columns{
@@ -69,7 +106,7 @@
 	overflow: hidden;
 	border-style:solid;
 	border-width:3px;
-	border-color:orange;
+	border-color:#ffa500;
 }
 
 .description h1 {
@@ -95,7 +132,7 @@
 	font-family: 'Droid Sans', sans-serif;
 	font-size: 14px;
 	font-weight: normal;
-	color: orange;
+	color: #ffa500;
 	text-align:justify;
 	font-weight:lighter;
 }
@@ -108,6 +145,25 @@
 	text-align:justify;
 	font-weight:lighter;
 }
+
+.description li{
+	font-family: 'Droid Sans', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #8e8e8e;
+	text-align:justify;
+	font-weight:lighter;
+}
+
+.bottom {
+	position: absolute;
+	bottom: 0px;
+	margin: 0 auto;
+	margin-top: 10px;
+	left: 50%;
+	margin-left:-470px !important;
+}
+
 .bottom p{
 	margin-top: 0px;
 	font-family: 'Droid Sans', sans-serif;
@@ -117,10 +173,11 @@
 
 .bottom hr{
 	margin-bottom: 0px;
+	margin-top: 0px;
 }
 
 .image-box{
-	border: 3px solid orange;
+	border: 3px solid #ffa500;
 }
 
 /* Timer over-ride---------------------- */
